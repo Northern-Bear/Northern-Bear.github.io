@@ -3,62 +3,77 @@ html {
     font-family: Helvetica, sans-serif;
 }
 
-@media (min-width: 600px) {
-    
-}
-
 body {
     margin: 0;
 }
 
 /*-- Navigation Bar --*/
 nav {
-    background-color: hsla(6, 39%, 10%, 0.5);
-    height: 100%;
-    width: 180px;
+    background-color: hsla(149, 39%, 10%, 0.5);
+    height: 2.5em;
+    width: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 0;
-    padding: 20px;
+    padding: 0;
     border-left: #456152 solid 7px;
+    display: block;
+}
+
+.nav-logo {
+    height: 7em;
+    width: 20em;
+    position: absolute;
+    top: .5em;
+    left: .5em;
+    padding: 2px;
+    display: inline;
+}
+
+figure {
+    display: inline;
+    margin: 0;
 }
 
 figure img {
-    max-width: 100%;
-    height:fit-content;
+    width: 6em;
     border-radius: 15px;
+    margin-right: .5em;
 }
 
-nav h2 {
+.nav-logo h2 {
     text-align: center;
     border-bottom: #608773 solid 2px;
     color: #608773;
+    display: inline;
+    position: relative;
+    bottom: 3em;
 }
 
-nav span {
-    color: #70322B;
+.nav-logo span {
+    color: #8A3D34;
     font-size: larger;
     text-transform: uppercase;
 }
 
 ul {
     list-style: none;
-    text-align: left;
-    margin: 0;
+    text-align: right;
+    margin: 1em;
     padding: 0;
 }
 
 ul li {
     color: #608773;
+    display: inline;
+    margin: 0 1em;
 }
 
 /*-- Main Element --*/
 main {
-    position: relative;
-    margin-right: 225px;
-    padding: 0px 0px;
+    padding: 0 0;
     height: 100%;
+    display: block;
 }
 
 main header {
@@ -67,7 +82,7 @@ main header {
     background-size: cover;
     background-position: bottom;
     width: 100%;
-    height: 550px;
+    height: 35em;
 }
 
 .image-overlay {
@@ -76,7 +91,7 @@ main header {
     top: 0;
     left: 0;
     width:100%;
-    height: 100%;
+    height: 35em;
 }
 
 header h1 {
@@ -97,4 +112,8 @@ header h1 {
 
 .beer-h1 {
     text-align: right;
+}
+
+@media (min-width: 600px) {
+    
 }
