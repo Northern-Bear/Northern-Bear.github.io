@@ -3,6 +3,10 @@ html {
     font-family: Helvetica, sans-serif;
 }
 
+@media (min-width: 600px) {
+    
+}
+
 body {
     margin: 0;
 }
