@@ -32,6 +32,7 @@ nav {
 
 figure {
     display: inline;
+    position: absolute;
     margin: 0;
 }
 
@@ -47,7 +48,6 @@ figure img {
     color: #608773;
     display: inline;
     position: relative;
-    bottom: 3em;
 }
 
 .nav-logo span {
