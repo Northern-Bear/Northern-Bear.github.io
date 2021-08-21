@@ -1,19 +1,96 @@
 html {
-    background-color: #204F21;
+    background-color: #101A14;
+    font-family: Helvetica, sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
+/*-- Navigation Bar --*/
 nav {
-    background-color: #4F2035;
+    background-color: hsla(6, 39%, 10%, 0.5);
     height: 100%;
-    width: 30%;
+    width: 180px;
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
-    padding-top: 20px;
-    border-right: #9C1F56 solid 3px;
+    padding: 20px;
+    border-left: #456152 solid 7px;
+}
+
+figure img {
+    max-width: 100%;
+    height:fit-content;
+    border-radius: 15px;
+}
+
+nav h2 {
+    text-align: center;
+    border-bottom: #608773 solid 2px;
+    color: #608773;
+}
+
+nav span {
+    color: #70322B;
+    font-size: larger;
+    text-transform: uppercase;
 }
 
 ul {
     list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    color: #608773;
+}
+
+/*-- Main Element --*/
+main {
+    position: relative;
+    margin-right: 225px;
+    padding: 0px 0px;
+    height: 100%;
+}
+
+main header {
+    background-image: url("../images/skyline.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 550px;
+}
+
+.image-overlay {
+    background-color: hsla(6, 39%, 10%, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+}
+
+header h1 {
+    position: relative;
+    margin:auto;
+    width: 50%;
+    padding: 170px 0;
+    color: #608773
+}
+
+.carpenter-h1 {
+    text-align: left;
+}
+
+.webdev-h1 {
+    text-align: center;
+}
+
+.beer-h1 {
+    text-align: right;
 }
