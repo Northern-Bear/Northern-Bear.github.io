@@ -44,10 +44,10 @@ figure img {
 
 .nav-logo h2 {
     text-align: center;
-    border-bottom: #608773 solid 2px;
     color: #608773;
     display: inline;
     position: relative;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .nav-logo span {
@@ -86,7 +86,7 @@ main header {
 }
 
 .image-overlay {
-    background-color: hsla(6, 39%, 10%, 0.6);
+    background-color: hsla(6, 39%, 5%, 0.6);
     position: absolute;
     top: 0;
     left: 0;
@@ -99,7 +99,9 @@ header h1 {
     margin:auto;
     width: 50%;
     padding: 170px 0;
-    color: #608773
+    color: #608773;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4em;
 }
 
 .carpenter-h1 {
@@ -108,6 +110,8 @@ header h1 {
 
 .webdev-h1 {
     text-align: center;
+    color: #8A3D34;
+    font-size: 1.5em;
 }
 
 .beer-h1 {
