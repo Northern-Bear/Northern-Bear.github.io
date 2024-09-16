@@ -1,7 +1,7 @@
 html {
     background-color: #01260A;
     color: #62C746;
-    font-family: sans-serif;
+    font-family: "Roboto",sans-serif;
     font-size: 17px;
 }
 
@@ -11,19 +11,31 @@ html {
 
 h1 {
     font-size: 4rem;
-    text-shadow: 1px 3px 0px #01260A;
+    text-shadow: 1px 3px 0px #fd2631;
+    font-weight: bold;
+}
+
+h2 {
+    color: #62C746;
+    text-shadow: 1px 2px 0px #fd2631;
+    font-family: "Playfair Display", serif;
 }
 
 h3 {
     box-shadow: 0px 2px;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 h4 {
     box-shadow: 0px 2px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
 }
 
 p {
-    margin: 1rem 0rem;
+    margin: 0.4rem 0rem;
 }
 
 a {
@@ -35,27 +47,39 @@ ul {
 }
 
 img {
-    margin: 1rem;
+    margin: 0 0
 }
+
+/*------ Nav Bar Section------*/
 
 .nav-container {
     display: flex;
     background-color:#025918;
+    box-shadow: 0px 1px 3px #01260A;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .logo {
     margin: 0 0;
     font-family: "Bebas Neue", sans-serif;
     font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #fd2631;
 }
 
 .nav-links {
     display: flex;
     justify-content: space-between;
     margin-top: 0.3rem;
+    font-family: "Playfair Display", serif;
 }
+
+/*------ Header Section ------*/
 
 #header {
     background-image: url("../assets/green-smoke.jpg");
@@ -72,24 +96,49 @@ img {
     font-family: "Bebas Neue", sans-serif;
 }
 
+/*------ About Section ------*/
+
 #about {
     background-color: #014011;
     padding-top: 5rem;
-    padding-left: 1rem;
-    height: 100vh;
+    height: fit-content;
 }
 
-.about-container {
+.abt-img-box {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    position: relative;
+}
+
+.img-text {
+    color: #01260A;
+    position: absolute;
+    top: 1rem;
+    text-shadow: -1px 1px #014011;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.abt-img-box img {
+    height: 400px;
+}
+
+.about {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    height: 100vh;
+}
+
+.skills {
+    padding: 1rem;
 }
 
 .skill-container {
     display: grid;
-    justify-content: center;
-    align-items: end;
+    width: 100%;
+    justify-items: center;
     gap: 0.6rem;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -110,14 +159,17 @@ img {
     width: 5rem;
 
     border: #038C0C 1px solid;
-    border-radius: 1rem;
     box-shadow: -0.1rem 0.1rem 3px #01260A;
     text-align: center;
 }
 
+/*------ Projects Section ------*/
+
 #projects {
     padding: 1rem;
 }
+
+/*------ Footer Section ------*/
 
 footer {
     background-image: url("../assets/green-smoke.jpg");

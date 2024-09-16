@@ -45,6 +45,24 @@
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 
+    html {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    .about-container {
+        flex-direction: row;
+    }
+
+    .skill-container {
+        padding: 1rem;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 20rem;
+    }
 }
   
 @media only screen and (min-width: 1400px) {
@@ -66,20 +84,50 @@
         font-size: 1.5rem;
     }
 
+    h1 {
+        font-size: 10rem;
+    }
+
     #about {
-        padding: 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "img img skills skills"
+        "about about skills skills"
+        "about about skills skills";
+        padding-top: 4rem;
+    }
+
+    .abt-img-box {
+        grid-area: img;
+    }
+
+    .abt-img-box img {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .about {
+        width: 100%;
+        grid-area: about;
+    }
+
+    .skills {
+        width: 100%;
+        grid-area: skills;
     }
 
     .about-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
     }
 
     .skill-container {
-        grid-template-rows: 1fr;
+
+        padding: 1rem;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-        align-items: start;
-        height: fit-content;
+        gap: 2rem;
+        height: 20rem;
     }
 }
